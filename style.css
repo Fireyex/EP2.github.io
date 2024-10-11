@@ -1,0 +1,158 @@
+*{ /*Con * seleccionamos todos los elementos */
+    /*Pone un margen inicial de 0*/
+    margin: 0;
+    padding: 0;
+    --color1: #fff; /*Creamos una variable que usaremos más adelante*/
+    --color2: #503e2d;
+    --color3: #d8d3ce3a;
+}
+
+body{ /*Hace que todo el contenido sea más pequeño y esté centrado*/
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url(img/background.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+header{
+    background-color: var(--color2);
+    border: 2px solid black; /*Le ponemos un borde*/
+    height: 120px; /*Da altura a la cabecera*/
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /*Hacemos que los items estén a los lados sobrando todo el espacio del centro*/
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+header a{
+    height: 100%;
+}
+
+#logotipo{
+    max-height: 100%;
+}
+
+ul{
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.menuul a, aside ul li{
+    background-color: var(--color2);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.menuul a:hover, aside ul li:hover{
+    background-color: var(--color3);
+}
+
+main{
+    display: flex;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.subprincipal, .subprincipaltexto{
+    height: 366px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subprincipaltexto{
+    font-size: 50px;
+    text-align: center;
+}
+
+.subprincipal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+aside{
+    border: 2px solid black;
+    background-color: var(--color2);
+    border: 1px solid black; /*Le ponemos un borde*/
+    padding: 10px;
+    text-align: center;
+}
+
+aside ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    border: 2px solid black;
+    height: 70px;
+    background-color: var(--color1);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer img{
+    max-height: 100%;
+}
+
+.pie i{
+    margin: 20px;
+    font-size: 35px;
+}
+
+footer p{
+    flex-basis: 100%;
+}
+
+#barralateral{
+    height: 500px;
+    display: flex;
+    margin-top: 50px;
+}
+
+#barralateral ul{
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+}
+
+#barralateral ul a li{
+    margin: 5px;
+}
+
+#barralateral ul a li:hover{
+    color: red;
+}
+
+.juegos{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.juegos img{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.juegos p{
+    margin: 30px;
+}
